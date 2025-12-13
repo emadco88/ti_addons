@@ -4,7 +4,7 @@
               name="Homepage">
         <t t-call="website.layout">
             <t t-set="no_footer" t-value="True"/>
-            <div class="ti-homepage-simple" dir="rtl">
+            <div class="ti-homepage-simple oe_structure" dir="rtl">
                 <section class="ti-simple">
                     <div class="ti-logo-block">
                         <div class="ti-logo-circle">
@@ -40,6 +40,7 @@
                     </div>
                 </section>
             </div>
+            <div class="oe_structure"/>
         </t>
     </template>
 
