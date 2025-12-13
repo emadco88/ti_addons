@@ -1,0 +1,130 @@
+.ti-homepage-simple {
+    --ti-primary: #a67b4f;
+    --ti-primary-dark: #8b663d;
+    --ti-bg: #f3eee7;
+    --ti-text: #4b3a28;
+    --ti-white: #ffffff;
+    min-height: 100vh;
+    background: var(--ti-bg);
+    font-family: "Cairo", "Noto Sans Arabic", "Tahoma", "Segoe UI", sans-serif;
+    color: var(--ti-text);
+}
+
+.ti-homepage-simple .o_header_standard,
+.ti-homepage-simple #footer,
+.ti-homepage-simple .o_footer {
+    display: none !important;
+}
+
+.ti-simple {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 2.5rem;
+    text-align: center;
+}
+
+.ti-logo-block {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.ti-logo-circle {
+    width: 68px;
+    height: 68px;
+    border-radius: 16px;
+    background: var(--ti-primary);
+    color: var(--ti-white);
+    font-weight: 800;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    box-shadow: 0 12px 24px rgba(166, 123, 79, 0.22);
+    padding: 10px;
+}
+
+.ti-logo-img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    display: block;
+}
+
+.ti-verify {
+    color: #21b6f5;
+    font-size: 1.3rem;
+}
+
+.ti-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 0.4rem 0 0.2rem;
+}
+
+.ti-subtitle {
+    color: #8b745a;
+    margin-bottom: 1.4rem;
+    font-weight: 700;
+}
+
+.ti-link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.ti-link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ti-primary);
+    color: var(--ti-white);
+    text-decoration: none;
+    padding: 0.95rem 1rem;
+    padding-inline-start: 1.4rem;
+    padding-inline-end: 3.6rem;
+    border-radius: 14px;
+    font-weight: 800;
+    border: 2px solid #f6f0e8;
+    box-shadow: 0 12px 24px rgba(166, 123, 79, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+    position: relative;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+
+.ti-link-btn:hover {
+    background: var(--ti-primary-dark);
+    box-shadow: 0 16px 28px rgba(139, 102, 61, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+    transform: translateY(-1px);
+    color: var(--ti-white);
+}
+
+.ti-link-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 10px 20px rgba(139, 102, 61, 0.25);
+}
+
+.ti-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    font-size: 1.05rem;
+    position: absolute;
+    inset-inline-end: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 480px) {
+    .ti-title {
+        font-size: 1.2rem;
+    }
+
+    .ti-link-btn {
+        font-size: 0.95rem;
+    }
+}

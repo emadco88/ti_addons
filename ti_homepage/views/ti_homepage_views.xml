@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="ti_homepage_page_template"
+              name="Homepage">
+        <t t-call="website.layout">
+            <t t-set="no_footer" t-value="True"/>
+            <div class="ti-homepage-simple" dir="rtl">
+                <section class="ti-simple">
+                    <div class="ti-logo-block">
+                        <div class="ti-logo-circle">
+                            <img class="ti-logo-img" t-att-src="'/ti_homepage/static/src/img/ti_logo.svg'"
+                                 alt="شعار مجمع التقوى الإسلامي"/>
+                        </div>
+                        <span class="ti-verify" aria-label="موثق">
+                            <i class="fa fa-check-circle"></i>
+                        </span>
+                    </div>
+                    <h1 class="ti-title">مجمع التقوى الإسلامي</h1>
+                    <div class="ti-subtitle">روابط وخدمات المجمع</div>
+
+                    <div class="ti-link-list">
+                        <a class="ti-link-btn" href="https://chat.whatsapp.com/CX6wnOH1yQr7sYEvrQnGTX" target="_blank"
+                           rel="noopener">
+                            <span class="ti-icon"><i class="fa fa-whatsapp"></i></span>
+                            <span>تابعونا على واتس آب</span>
+                        </a>
+                        <a class="ti-link-btn" href="https://t.me/+VOPf_QlHxokxNzQ8" target="_blank" rel="noopener">
+                            <span class="ti-icon"><i class="fa fa-paper-plane"></i></span>
+                            <span>تابعونا على التليجرام</span>
+                        </a>
+                        <a class="ti-link-btn" href="https://maps.app.goo.gl/6CssrvU5xN2MFzLV8?g_st=iw" target="_blank"
+                           rel="noopener">
+                            <span class="ti-icon"><i class="fa fa-map-marker"></i></span>
+                            <span>موقع المجمع على خرائط جوجل</span>
+                        </a>
+                        <a class="ti-link-btn" href="/contactus">
+                            <span class="ti-icon"><i class="fa fa-comments"></i></span>
+                            <span>تواصلوا معنا</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_ti_homepage" model="website.page">
+        <field name="name">الصفحة الرئيسية - التقوى</field>
+        <field name="url">/altaqwa</field>
+        <field name="website_published" eval="True"/>
+        <field name="view_id" ref="ti_homepage_page_template"/>
+    </record>
+</odoo>

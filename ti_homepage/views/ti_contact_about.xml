@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- About Us page -->
+    <template id="aboutus_taqwa" name="About Us Taqwa">
+        <t t-call="website.layout">
+            <t t-set="no_footer" t-value="True"/>
+            <div class="ti-homepage-simple" dir="rtl">
+                <section class="ti-simple">
+                    <div class="ti-logo-block">
+                        <div class="ti-logo-circle">
+                            <img class="ti-logo-img" t-att-src="'/ti_homepage/static/src/img/ti_logo.svg'"
+                                 alt="شعار مجمع التقوى الإسلامي"/>
+                        </div>
+                        <span class="ti-verify" aria-label="موثق">
+                            <i class="fa fa-check-circle"></i>
+                        </span>
+                    </div>
+                    <h1 class="ti-title">عن مجمع التقوى الإسلامي</h1>
+                    <div class="ti-subtitle">مجمع قرآني دعوي يرعى الأسرة والناشئة</div>
+
+                    <div class="ti-link-list">
+                        <a class="ti-link-btn" href="/altaqwa">
+                            <span class="ti-icon"><i class="fa fa-home"></i></span>
+                            <span>العودة للصفحة الرئيسية</span>
+                        </a>
+                        <a class="ti-link-btn" href="/contactus">
+                            <span class="ti-icon"><i class="fa fa-comments"></i></span>
+                            <span>تواصلوا معنا</span>
+                        </a>
+                        <a class="ti-link-btn" href="https://chat.whatsapp.com/CX6wnOH1yQr7sYEvrQnGTX" target="_blank"
+                           rel="noopener">
+                            <span class="ti-icon"><i class="fa fa-whatsapp"></i></span>
+                            <span>تابعونا على واتس آب</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_taqwa_about" model="website.page">
+        <field name="name">عن مجمع التقوى</field>
+        <field name="url">/aboutus</field>
+        <field name="website_published" eval="True"/>
+        <field name="view_id" ref="ti_homepage.aboutus_taqwa"/>
+    </record>
+</odoo>

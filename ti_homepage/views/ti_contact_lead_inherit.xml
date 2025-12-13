@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="contactus_lead_text_inherit" inherit_id="website.contactus">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <section class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24" data-vcss="001"
+                     data-snippet="s_title" data-scroll-background-ratio="1">
+                <span class="s_parallax_bg"
+                      style="background-image: url('/ti_homepage/static/src/img/mosque.jpg'); background-position: 50% -10%;"/>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <h1>تواصل معنا</h1>
+                </div>
+            </section>
+
+            <t t-set="no_footer" t-value="True"/>
+            <p class="lead text-center">
+                يشرفنا استقبال استفساراتكم واقتراحاتكم بخصوص برامج مجمع التقوى الإسلامي وخدماته.
+                سنبذل جهدنا للرد عليكم في أسرع وقت.
+            </p>
+            <div class="ti-homepage-simple" dir="rtl">
+                <section class="ti-simple">
+                    <div class="ti-link-list">
+                        <a class="ti-link-btn" href="https://chat.whatsapp.com/CX6wnOH1yQr7sYEvrQnGTX" target="_blank"
+                           rel="noopener">
+                            <span class="ti-icon"><i class="fa fa-whatsapp"></i></span>
+                            <span>تابعونا على واتس آب</span>
+                        </a>
+                        <a class="ti-link-btn" href="https://t.me/+VOPf_QlHxokxNzQ8" target="_blank" rel="noopener">
+                            <span class="ti-icon"><i class="fa fa-paper-plane"></i></span>
+                            <span>تابعونا على التليجرام</span>
+                        </a>
+                        <a class="ti-link-btn" href="https://maps.app.goo.gl/6CssrvU5xN2MFzLV8?g_st=iw" target="_blank"
+                           rel="noopener">
+                            <span class="ti-icon"><i class="fa fa-map-marker"></i></span>
+                            <span>موقع المجمع على خرائط جوجل</span>
+                        </a>
+                        <a class="ti-link-btn" href="/altaqwa">
+                            <span class="ti-icon"><i class="fa fa-home"></i></span>
+                            <span>العودة للصفحة الرئيسية</span>
+                        </a>
+                    </div>
+                </section>
+                <section class="s_website_form">
+                    <div class="container">
+                        <form id="contactus_form" action="/website/form/" method="post" enctype="multipart/form-data"
+                              class="o_mark_required" data-mark="*" data-model_name="mail.mail"
+                              data-success-mode="redirect"
+                              data-success-page="/contactus-thank-you" data-pre-fill="true">
+                            <div class="s_website_form_rows row s_col_no_bgcolor">
+                                <div class="mb-3 col-lg-6 s_website_form_field s_website_form_custom s_website_form_required"
+                                     data-type="char" data-name="Field">
+                                    <label class="s_website_form_label" style="width: 200px" for="contact1">
+                                        <span class="s_website_form_label_content">الاسم</span>
+                                        <span class="s_website_form_mark"> *</span>
+                                    </label>
+                                    <input id="contact1" type="text" class="form-control s_website_form_input"
+                                           name="name"
+                                           required="" data-fill-with="name"/>
+                                </div>
+                                <div class="mb-3 col-lg-6 s_website_form_field s_website_form_custom" data-type="char"
+                                     data-name="Field">
+                                    <label class="s_website_form_label" style="width: 200px" for="contact2">
+                                        <span class="s_website_form_label_content">رقم التليفون</span>
+                                    </label>
+                                    <input id="contact2" type="tel" class="form-control s_website_form_input"
+                                           name="phone"
+                                           data-fill-with="phone"/>
+                                </div>
+                                <div class="mb-3 col-lg-6 s_website_form_field s_website_form_required s_website_form_model_required"
+                                     data-type="email" data-name="Field">
+                                    <label class="s_website_form_label" style="width: 200px" for="contact3">
+                                        <span class="s_website_form_label_content">البريد ألإلكتروني</span>
+                                        <span class="s_website_form_mark"> *</span>
+                                    </label>
+                                    <input id="contact3" type="email" class="form-control s_website_form_input"
+                                           name="email_from" required="" data-fill-with="email"/>
+                                </div>
+                                <div class="mb-3 col-lg-6 s_website_form_field s_website_form_custom" data-type="char"
+                                     data-name="Field">
+                                    <label class="s_website_form_label" style="width: 200px" for="contact4">
+                                        <span class="s_website_form_label_content">الشركة</span>
+                                    </label>
+                                    <input id="contact4" type="text" class="form-control s_website_form_input"
+                                           name="company" data-fill-with="commercial_company_name"/>
+                                </div>
+                                <div class="mb-3 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                     data-type="char" data-name="Field">
+                                    <label class="s_website_form_label" style="width: 200px" for="contact5">
+                                        <span class="s_website_form_label_content">الموضوع</span>
+                                        <span class="s_website_form_mark"> *</span>
+                                    </label>
+                                    <input id="contact5" type="text" class="form-control s_website_form_input"
+                                           name="subject" required=""/>
+                                </div>
+                                <div class="mb-3 col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                                     data-type="text" data-name="Field">
+                                    <label class="s_website_form_label" style="width: 200px" for="contact6">
+                                        <span class="s_website_form_label_content">الاستفسار</span>
+                                        <span class="s_website_form_mark"> *</span>
+                                    </label>
+                                    <textarea id="contact6" class="form-control s_website_form_input" name="description"
+                                              required="" rows="8"></textarea>
+                                </div>
+                                <div class="mb-3 col-12 s_website_form_field s_website_form_dnone">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px"
+                                               for="contact7">
+                                            <span class="s_website_form_label_content">ايميل إلى</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input id="contact7" type="hidden" class="form-control s_website_form_input"
+                                                   name="email_to"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-0 py-2 col-12 s_website_form_submit s_website_form_no_submit_label text-end"
+                                     data-name="Submit Button">
+                                    <div style="width: 200px;" class="s_website_form_label"/>
+                                    <a href="#" role="button" class="btn btn-primary s_website_form_send">إرسال</a>
+                                    <span id="s_website_form_result"></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+            </div>
+
+        </xpath>
+    </template>
+</odoo>
