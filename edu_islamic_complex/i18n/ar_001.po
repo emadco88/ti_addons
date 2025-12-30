@@ -1,0 +1,1825 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* edu_islamic_complex
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-30 03:52+0000\n"
+"PO-Revision-Date: 2025-12-30 03:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/wizard/create_invoice_wizard.py:0
+msgid "%s (%s - %s)"
+msgstr "%s (%s - %s)"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_class_group_kanban
+msgid "<span> - </span>"
+msgstr "<span> - </span>"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_class_group_kanban
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_teacher_kanban
+msgid "<span>/</span>"
+msgstr "<span>/</span>"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_teacher_kanban
+msgid "<span>Load: </span>"
+msgstr "<span>العبء: </span>"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_class_group_kanban
+msgid "<span>Students: </span>"
+msgstr "<span>الطلاب: </span>"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_class_group_kanban
+msgid "<span>Time: </span>"
+msgstr "<span>الوقت: </span>"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_attendance__status__absent
+msgid "Absent"
+msgstr "غائب"
+
+#. module: edu_islamic_complex
+#: model:res.groups,name:edu_islamic_complex.group_edu_academic
+msgid "Academic Coordinator"
+msgstr "منسق أكاديمي"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__account_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__account_id
+msgid "Account"
+msgstr "الحساب"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__message_needaction
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__message_needaction
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__message_needaction
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__message_needaction
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__message_needaction
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__message_needaction
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__active
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__active
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__active
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__active
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__active
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__status__active
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_enrollment__status__active
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_assignment_search
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_class_group_search
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_enrollment_search
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_guardian_search
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_level_search
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_student_search
+msgid "Active"
+msgstr "نشط"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__active_student_count
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__active_students
+msgid "Active Students"
+msgstr "الطلاب النشطون"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__activity_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__activity_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__activity_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__activity_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__activity_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__activity_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__activity_exception_decoration
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__activity_exception_decoration
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__activity_exception_decoration
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__activity_exception_decoration
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__activity_exception_decoration
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__activity_exception_decoration
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "تمييز استثناء النشاط"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__activity_state
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__activity_state
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__activity_state
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__activity_state
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__activity_state
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__activity_state
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__activity_type_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__activity_type_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__activity_type_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__activity_type_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__activity_type_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__activity_type_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__address
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__address
+msgid "Address"
+msgstr "العنوان"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_placement_wizard__reading_level__advanced
+msgid "Advanced"
+msgstr "متقدم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__age_years
+msgid "Age Years"
+msgstr "العمر بالسنوات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__amount
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__amount
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_settings
+msgid "Apply gender constraints when assigning teachers."
+msgstr "تطبيق قيود النوع عند إسناد المعلمين."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__assigned_group_ids
+msgid "Assigned Groups"
+msgstr "المجموعات المسندة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__assigned_student_ids
+msgid "Assigned Students"
+msgstr "الطلاب المسندون"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__teacher_id
+msgid "Assigned Teacher"
+msgstr "المعلم المعيّن"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__assignment_id
+msgid "Assignment"
+msgstr "تكليف"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__assignment_count
+msgid "Assignment Count"
+msgstr "عدد التكليفات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__name
+msgid "Assignment Reference"
+msgstr "مرجع التكليف"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__assignment_type
+msgid "Assignment Type"
+msgstr "نوع التكليف"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/assignment.py:0
+msgid "Assignment cannot target both a student and a class group."
+msgstr "لا يمكن أن يستهدف التكليف طالبًا ومجموعة دراسية معًا."
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/assignment.py:0
+msgid "Assignment must target a student or a class group."
+msgstr "يجب أن يستهدف التكليف طالبًا أو مجموعة دراسية."
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_assignments
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__assignment_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__assignment_ids
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_assignments
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_class_group_form
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_student_form
+msgid "Assignments"
+msgstr "التكليفات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__message_attachment_count
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__message_attachment_count
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__message_attachment_count
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__message_attachment_count
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__message_attachment_count
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__message_attachment_count
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_attendance
+#: model:ir.model,name:edu_islamic_complex.model_edu_attendance
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__attendance_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__attendance_ids
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_attendance
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_session_form
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_student_form
+msgid "Attendance"
+msgstr "الحضور"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__attendance_count
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__attendance_count
+msgid "Attendance Count"
+msgstr "عدد الحضور"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__attendance_rate
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__attendance_rate
+msgid "Attendance Rate"
+msgstr "نسبة الحضور"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__availability_notes
+msgid "Availability Notes"
+msgstr "ملاحظات التوفر"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_hr_employee_form_edu
+msgid "Available Days"
+msgstr "الأيام المتاحة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__evaluation_avg_score
+msgid "Average Evaluation Score"
+msgstr "متوسط التقييم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_placement_wizard__reading_level__basic
+msgid "Basic"
+msgstr "أساسي"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__behavior_score
+msgid "Behavior"
+msgstr "السلوك"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__partner_id
+msgid "Billing Partner"
+msgstr "شريك الفوترة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__billing_period
+msgid "Billing Period"
+msgstr "فترة الفوترة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_res_config_settings__block_sessions_on_overdue
+msgid "Block Sessions When Fees Overdue"
+msgstr "حظر الجلسات عند تأخر الرسوم"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_settings
+msgid "Block scheduling when fees are overdue."
+msgstr "حظر الجدولة عند تأخر الرسوم."
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_create_invoice_wizard_form
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_placement_wizard_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__status__cancelled
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_enrollment__status__cancelled
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_session__state__cancelled
+msgid "Cancelled"
+msgstr "ملغى"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/assignment.py:0
+msgid ""
+"Cannot schedule sessions: fees are overdue beyond the allowed threshold."
+msgstr "لا يمكن جدولة الجلسات: الرسوم متأخرة بما يتجاوز الحد المسموح."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__capacity
+msgid "Capacity"
+msgstr "السعة"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/class_group.py:0
+msgid "Capacity must be zero or greater."
+msgstr "يجب أن تكون السعة صفرًا أو أكبر."
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_class_group
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__class_group_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__class_group_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__class_group_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__class_group_id
+msgid "Class Group"
+msgstr "المجموعة الدراسية"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/enrollment.py:0
+msgid "Class group capacity exceeded."
+msgstr "تم تجاوز سعة المجموعة الدراسية."
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/enrollment.py:0
+msgid "Class group level must match enrollment level."
+msgstr "يجب أن يطابق مستوى المجموعة الدراسية مستوى التسجيل."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__code
+msgid "Code"
+msgstr "الكود"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__company_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__company_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__company_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__company_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__company_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__company_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__company_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__company_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__company_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__company_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__company_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_res_config_settings
+msgid "Config Settings"
+msgstr "تهيئة الإعدادات"
+
+#. module: edu_islamic_complex
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_config
+msgid "Configuration"
+msgstr "التهيئة"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_create_invoice_wizard_form
+msgid "Create"
+msgstr "إنشاء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__create_assignment
+msgid "Create Assignment"
+msgstr "إنشاء تكليف"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_placement_wizard_form
+msgid "Create Enrollment"
+msgstr "إنشاء تسجيل"
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_create_invoice_wizard
+msgid "Create Enrollment Invoice"
+msgstr "إنشاء قيد رسوم التسجيل"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/enrollment.py:0
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_create_invoice_wizard_form
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_enrollment_form
+msgid "Create Invoice"
+msgstr "إنشاء قيد رسوم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__create_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__create_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__create_date
+msgid "Created on"
+msgstr "تاريخ الإنشاء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__credit
+msgid "Credit"
+msgstr "دائن"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__currency_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__current_enrollment_id
+msgid "Current Enrollment"
+msgstr "التسجيل الحالي"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__current_level_id
+msgid "Current Level"
+msgstr "المستوى الحالي"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__current_load
+msgid "Current Load"
+msgstr "العبء الحالي"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_level_form
+msgid "Curriculum"
+msgstr "المنهج"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__curriculum_notes
+msgid "Curriculum Notes"
+msgstr "ملاحظات المنهج"
+
+#. module: edu_islamic_complex
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_dashboard
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__birth_date
+msgid "Date of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__debit
+msgid "Debit"
+msgstr "مدين"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_res_config_settings__fee_account_id_default
+msgid "Default Fee Account"
+msgstr "الحساب الافتراضي للرسوم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_res_config_settings__recurrence_weeks_default
+msgid "Default Recurrence (Weeks)"
+msgstr "التكرار الافتراضي (أسابيع)"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_res_config_settings__session_duration_default
+msgid "Default Session Duration (Hours)"
+msgstr "مدة الجلسة الافتراضية (ساعات)"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_settings
+msgid "Default account for fee entries."
+msgstr "الحساب الافتراضي لقيود الرسوم."
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_settings
+msgid "Default duration for generated sessions."
+msgstr "المدة الافتراضية للجلسات المُنشأة."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__status__done
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_session__state__done
+msgid "Done"
+msgstr "منجز"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__status__draft
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_enrollment__status__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__due_date
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: edu_islamic_complex
+#: model:ir.module.category,name:edu_islamic_complex.category_edu
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_root
+#: model:res.groups.privilege,name:edu_islamic_complex.res_groups_privilege_edu
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_settings
+msgid "Education"
+msgstr "التعليم"
+
+#. module: edu_islamic_complex
+#: model:ir.actions.server,name:edu_islamic_complex.action_edu_dashboard
+#: model:ir.model,name:edu_islamic_complex.model_edu_dashboard
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_dashboard_form
+msgid "Education Dashboard"
+msgstr "لوحة معلومات التعليم"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/wizard/create_invoice_wizard.py:0
+msgid "Education Fees"
+msgstr "رسوم التعليم"
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_level
+msgid "Educational Level"
+msgstr "المستوى التعليمي"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__email
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__email
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_res_config_settings__enable_gender_rules
+msgid "Enable Gender Constraints"
+msgstr "تفعيل قيود النوع"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__end_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__end_date
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__end_datetime
+msgid "End Datetime"
+msgstr "تاريخ ووقت الانتهاء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__time_end
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__time_end
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__time_end
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__end_time
+msgid "End Time"
+msgstr "وقت الانتهاء"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/assignment.py:0
+#: code:addons/edu_islamic_complex/models/enrollment.py:0
+msgid "End date must be after start date."
+msgstr "يجب أن يكون تاريخ الانتهاء بعد تاريخ البدء."
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/assignment.py:0
+#: code:addons/edu_islamic_complex/models/session.py:0
+msgid "End time must be after start time."
+msgstr "يجب أن يكون وقت الانتهاء بعد وقت البدء."
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_enrollment
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__enrollment_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__enrollment_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__enrollment_id
+msgid "Enrollment"
+msgstr "تسجيل"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__enrollment_count
+msgid "Enrollment Count"
+msgstr "عدد التسجيلات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__enrollment_date
+msgid "Enrollment Date"
+msgstr "تاريخ التسجيل"
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_invoice_link
+msgid "Enrollment Invoice Link"
+msgstr "ربط قيد الرسوم بالتسجيل"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__name
+msgid "Enrollment Reference"
+msgstr "مرجع التسجيل"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/wizard/create_invoice_wizard.py:0
+msgid "Enrollment is required."
+msgstr "التسجيل مطلوب."
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_enrollments
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__enrollment_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__enrollment_ids
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_enrollments
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_class_group_form
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_student_form
+msgid "Enrollments"
+msgstr "التسجيلات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__entry_id
+msgid "Entry"
+msgstr "قيد"
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_evaluation
+msgid "Evaluation"
+msgstr "تقييم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__evaluation_count
+msgid "Evaluation Count"
+msgstr "عدد التقييمات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__name
+msgid "Evaluation Reference"
+msgstr "مرجع التقييم"
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_evaluations
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__evaluation_ids
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_evaluations
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_student_form
+msgid "Evaluations"
+msgstr "التقييمات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_attendance__status__excused
+msgid "Excused"
+msgstr "بعذر"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__explain
+msgid "Explain"
+msgstr "الشرح"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_guardian__relation__father
+msgid "Father"
+msgstr "الأب"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__account_id
+msgid "Fee Account"
+msgstr "حساب الرسوم"
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_invoice_links
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_fee_invoices
+msgid "Fee Entries"
+msgstr "قيود الرسوم"
+
+#. module: edu_islamic_complex
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_fees
+msgid "Fees"
+msgstr "الرسوم"
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_fees_plan
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__plan_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__fee_plan_id
+msgid "Fees Plan"
+msgstr "خطة الرسوم"
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_fees_plans
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_fees_plans
+msgid "Fees Plans"
+msgstr "خطط الرسوم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_student__gender__female
+msgid "Female"
+msgstr "أنثى"
+
+#. module: edu_islamic_complex
+#: model:res.groups,name:edu_islamic_complex.group_edu_finance
+msgid "Finance Officer"
+msgstr "مسؤول مالي"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__message_follower_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__message_follower_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__message_follower_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__message_follower_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__message_follower_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__message_follower_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__message_partner_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__message_partner_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__message_partner_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__message_partner_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__message_partner_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__message_partner_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_assignment__activity_type_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_class_group__activity_type_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_enrollment__activity_type_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_evaluation__activity_type_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_guardian__activity_type_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_session__activity_type_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_student__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome مثل fa-tasks"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__meeting_friday
+msgid "Fri"
+msgstr "جم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__available_friday
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__meeting_day__4
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_placement_wizard__meeting_day__4
+msgid "Friday"
+msgstr "الجمعة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__gender
+msgid "Gender"
+msgstr "النوع"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_assignment_form
+msgid "Generate Sessions"
+msgstr "توليد الجلسات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_enrollment__status__graduated
+msgid "Graduated"
+msgstr "متخرج"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__assignment_type__group
+msgid "Group"
+msgstr "مجموعة"
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_class_groups
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_groups
+msgid "Groups"
+msgstr "المجموعات"
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_guardian
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_guardian__relation__guardian
+msgid "Guardian"
+msgstr "ولي أمر"
+
+#. module: edu_islamic_complex
+#: model:res.groups,name:edu_islamic_complex.group_edu_guardian
+msgid "Guardian Portal"
+msgstr "بوابة ولي الأمر"
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_guardians
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__guardian_ids
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_guardians
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_student_form
+msgid "Guardians"
+msgstr "أولياء الأمور"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__has_message
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__has_message
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__has_message
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__has_message
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__has_message
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__has_message
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__has_message
+msgid "Has Message"
+msgstr "لديه رسالة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__has_overdue
+msgid "Has Overdue"
+msgstr "يوجد تأخير"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__homework_score
+msgid "Homework"
+msgstr "الواجبات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_res_config_settings__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__activity_exception_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__activity_exception_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__activity_exception_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__activity_exception_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__activity_exception_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__activity_exception_icon
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_assignment__activity_exception_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_class_group__activity_exception_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_enrollment__activity_exception_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_evaluation__activity_exception_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_guardian__activity_exception_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_session__activity_exception_icon
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_student__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة للدلالة على نشاط استثنائي."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_assignment__message_needaction
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_class_group__message_needaction
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_enrollment__message_needaction
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_evaluation__message_needaction
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_guardian__message_needaction
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_session__message_needaction
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_student__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "عند التحديد، تتطلب الرسائل الجديدة انتباهك."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_assignment__message_has_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_assignment__message_has_sms_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_class_group__message_has_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_class_group__message_has_sms_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_enrollment__message_has_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_enrollment__message_has_sms_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_evaluation__message_has_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_evaluation__message_has_sms_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_guardian__message_has_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_guardian__message_has_sms_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_session__message_has_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_session__message_has_sms_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_student__message_has_error
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_student__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "عند التحديد، توجد رسائل بها خطأ في التسليم."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_placement_wizard__reading_level__intermediate
+msgid "Intermediate"
+msgstr "متوسط"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__invoice_count
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__invoice_count
+msgid "Invoice Count"
+msgstr "عدد القيود"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__invoice_date
+msgid "Invoice Date"
+msgstr "تاريخ القيد"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__invoice_link_ids
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_enrollment_form
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_student_form
+msgid "Invoices"
+msgstr "القيود"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__message_is_follower
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__message_is_follower
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__message_is_follower
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__message_is_follower
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__message_is_follower
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__message_is_follower
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__is_overdue
+msgid "Is Overdue"
+msgstr "متأخر"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__is_teacher
+msgid "Is Teacher"
+msgstr "معلم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__is_teacher_effective
+msgid "Is Teacher (Effective)"
+msgstr "معلم (فعلي)"
+
+#. module: edu_islamic_complex
+#: model:res.groups,name:edu_islamic_complex.group_edu_admin
+msgid "Islamic School Admin"
+msgstr "مسؤول المدرسة الإسلامية"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__write_uid
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__write_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_attendance__status__late
+msgid "Late"
+msgstr "متأخر"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__level_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__level_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__level_id
+msgid "Level"
+msgstr "المستوى"
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_levels
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_levels
+msgid "Levels"
+msgstr "المستويات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__load_units
+msgid "Load Units"
+msgstr "وحدات العبء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__location
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__location
+msgid "Location"
+msgstr "الموقع"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_student__gender__male
+msgid "Male"
+msgstr "ذكر"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_res_config_settings__max_overdue_days
+msgid "Max Overdue Days"
+msgstr "الحد الأقصى لأيام التأخير"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__max_load
+msgid "Max Teaching Load"
+msgstr "الحد الأقصى لعبء التدريس"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_settings
+msgid "Max overdue days before blocking sessions."
+msgstr "الحد الأقصى لأيام التأخير قبل حظر الجلسات."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__meeting_day
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__meeting_day
+msgid "Meeting Day"
+msgstr "يوم اللقاء"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_class_group_form
+msgid "Meeting Days"
+msgstr "أيام اللقاء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__memorization_score
+msgid "Memorization"
+msgstr "الحفظ"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__memorization_juz
+msgid "Memorization (Ajza)"
+msgstr "الحفظ (أجزاء)"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__message_has_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__message_has_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__message_has_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__message_has_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__message_has_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__message_has_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__meeting_monday
+msgid "Mon"
+msgstr "إث"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__available_monday
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__meeting_day__0
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_placement_wizard__meeting_day__0
+msgid "Monday"
+msgstr "الاثنين"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_evaluation__period__monthly
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_fees_plan__billing_period__monthly
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_evaluation_search
+msgid "Monthly"
+msgstr "شهري"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_guardian__relation__mother
+msgid "Mother"
+msgstr "الأم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__my_activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__my_activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__my_activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__my_activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__my_activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__my_activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "موعد نشاطي النهائي"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_fees_plan__name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__name
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__national_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__national_id
+msgid "National ID"
+msgstr "الرقم القومي"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__activity_date_deadline
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__activity_summary
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__activity_summary
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__activity_summary
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__activity_summary
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__activity_summary
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__activity_summary
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__activity_type_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__activity_type_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__activity_type_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__activity_type_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__activity_type_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__activity_type_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_placement_wizard__reading_level__none
+msgid "None"
+msgstr "لا شيء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__notes
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__notes
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__message_needaction_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__message_needaction_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__message_needaction_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__message_needaction_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__message_needaction_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__message_needaction_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__message_has_error_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__message_has_error_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__message_has_error_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__message_has_error_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__message_has_error_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__message_has_error_counter
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_assignment__message_needaction_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_class_group__message_needaction_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_enrollment__message_needaction_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_evaluation__message_needaction_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_guardian__message_needaction_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_session__message_needaction_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_student__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_assignment__message_has_error_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_class_group__message_has_error_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_enrollment__message_has_error_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_evaluation__message_has_error_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_guardian__message_has_error_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_session__message_has_error_counter
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_student__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل ذات خطأ التسليم"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_settings
+msgid "Number of weeks to generate by default."
+msgstr "عدد الأسابيع للتوليد افتراضيًا."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_fees_plan__billing_period__one_time
+msgid "One-time"
+msgstr "مرة واحدة"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_invoice_link_search
+msgid "Overdue"
+msgstr "متأخر"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__overdue_days
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__overdue_days
+msgid "Overdue Days"
+msgstr "أيام التأخير"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__overdue_fees
+msgid "Overdue Fees"
+msgstr "الرسوم المتأخرة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_invoice_link__partner_id
+msgid "Partner"
+msgstr "الشريك"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__status__paused
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_enrollment__status__paused
+msgid "Paused"
+msgstr "موقوف"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_student__attendance_rate
+msgid "Percent of present attendance over total recorded sessions."
+msgstr "نسبة الحضور من إجمالي الجلسات المسجلة."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__period
+msgid "Period"
+msgstr "الفترة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__period_end
+msgid "Period End"
+msgstr "نهاية الفترة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_create_invoice_wizard__period_start
+msgid "Period Start"
+msgstr "بداية الفترة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__person_type
+msgid "Person Type"
+msgstr "نوع الشخص"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__phone
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__phone
+msgid "Phone"
+msgstr "الهاتف"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_enrollment_form
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_student_form
+msgid "Placement"
+msgstr "تحديد المستوى"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__placement_max_score
+msgid "Placement Max Score"
+msgstr "الحد الأعلى لدرجة تحديد المستوى"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__placement_min_score
+msgid "Placement Min Score"
+msgstr "الحد الأدنى لدرجة تحديد المستوى"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__placement_result
+msgid "Placement Result"
+msgstr "نتيجة تحديد المستوى"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__placement_score
+msgid "Placement Score"
+msgstr "درجة تحديد المستوى"
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_placement_wizard
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_placement_wizard_form
+msgid "Placement Wizard"
+msgstr "معالج تحديد المستوى"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/wizard/placement_wizard.py:0
+msgid "Placement via wizard"
+msgstr "تحديد المستوى عبر المعالج"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/wizard/create_invoice_wizard.py:0
+msgid "Please configure a fee account."
+msgstr "يرجى إعداد حساب للرسوم."
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/wizard/create_invoice_wizard.py:0
+msgid "Please define a billing partner."
+msgstr "يرجى تحديد شريك فوترة."
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/wizard/placement_wizard.py:0
+msgid "Please select a level."
+msgstr "يرجى اختيار مستوى."
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/wizard/create_invoice_wizard.py:0
+msgid "Please set a fee amount."
+msgstr "يرجى تحديد مبلغ الرسوم."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__user_id
+msgid "Portal User"
+msgstr "مستخدم البوابة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__prerequisite_ids
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_level_form
+msgid "Prerequisites"
+msgstr "المتطلبات السابقة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_attendance__status__present
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_attendance_search
+msgid "Present"
+msgstr "حاضر"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__present_count
+msgid "Present Count"
+msgstr "عدد الحضور"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__rating_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__rating_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__rating_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__rating_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__rating_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__rating_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__rating_ids
+msgid "Ratings"
+msgstr "التقييمات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__reading_level
+msgid "Reading Level"
+msgstr "مستوى القراءة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__recitation_score
+msgid "Recitation"
+msgstr "التلاوة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__recommended_level_id
+msgid "Recommended Level"
+msgstr "المستوى المقترح"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__partner_id
+msgid "Related Partner"
+msgstr "الشريك المرتبط"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__relation
+msgid "Relation"
+msgstr "صلة القرابة"
+
+#. module: edu_islamic_complex
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_reports
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__activity_user_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__activity_user_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__activity_user_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__activity_user_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__activity_user_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__activity_user_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_evaluation_form
+msgid "Rubric"
+msgstr "معايير التقييم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__message_has_sms_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__message_has_sms_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__message_has_sms_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__message_has_sms_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__message_has_sms_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__message_has_sms_error
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل النصية"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__meeting_saturday
+msgid "Sat"
+msgstr "سب"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__available_saturday
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__meeting_day__5
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_placement_wizard__meeting_day__5
+msgid "Saturday"
+msgstr "السبت"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_assignment_form
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_placement_wizard_form
+msgid "Schedule"
+msgstr "الجدول"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_session__state__scheduled
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_session_search
+msgid "Scheduled"
+msgstr "مجدول"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__score
+msgid "Score"
+msgstr "الدرجة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__level_id
+msgid "Selected Level"
+msgstr "المستوى المختار"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_level__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__session_id
+msgid "Session"
+msgstr "جلسة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__name
+msgid "Session Reference"
+msgstr "مرجع الجلسة"
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_sessions
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__session_ids
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_sessions
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_assignment_form
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_session_calendar
+msgid "Sessions"
+msgstr "الجلسات"
+
+#. module: edu_islamic_complex
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_settings
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__start_date
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__start_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__start_datetime
+msgid "Start Datetime"
+msgstr "تاريخ ووقت البدء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__time_start
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__time_start
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__time_start
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__start_time
+msgid "Start Time"
+msgstr "وقت البدء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__status
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__status
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__status
+msgid "Status"
+msgstr "الحالة"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_assignment__activity_state
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_class_group__activity_state
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_enrollment__activity_state
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_evaluation__activity_state
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_guardian__activity_state
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_session__activity_state
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_student__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تاريخ الاستحقاق قد مضى\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: أنشطة مستقبلية."
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_student
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__student_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__student_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__student_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__student_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__student_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__student_id
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__assignment_type__student
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_attendance__person_type__student
+msgid "Student"
+msgstr "طالب"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__student_ref
+msgid "Student Number"
+msgstr "رقم الطالب"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/enrollment.py:0
+msgid "Student already has an active enrollment for this level."
+msgstr "الطالب لديه تسجيل نشط لهذا المستوى بالفعل."
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/attendance.py:0
+msgid "Student attendance requires a student."
+msgstr "حضور الطالب يتطلب تحديد طالب."
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/attendance.py:0
+msgid "Student must be empty for teacher attendance."
+msgstr "يجب ترك الطالب فارغًا لحضور المعلم."
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_students
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__student_ids
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_students
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_guardian_form
+msgid "Students"
+msgstr "الطلاب"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_placement_wizard__suggested_teacher_ids
+msgid "Suggested Teachers"
+msgstr "المعلمون المقترحون"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__meeting_sunday
+msgid "Sun"
+msgstr "أحد"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__available_sunday
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__meeting_day__6
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_placement_wizard__meeting_day__6
+msgid "Sunday"
+msgstr "الأحد"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__teacher_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_attendance__teacher_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__teacher_id
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__teacher_id
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_attendance__person_type__teacher
+#: model:res.groups,name:edu_islamic_complex.group_edu_teacher
+msgid "Teacher"
+msgstr "معلم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_dashboard__teacher_load
+msgid "Teacher Load"
+msgstr "عبء المعلم"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_edu_placement_wizard_form
+msgid "Teacher Suggestion"
+msgstr "اقتراح المعلم"
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/attendance.py:0
+msgid "Teacher attendance requires a teacher."
+msgstr "حضور المعلم يتطلب تحديد معلم."
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/assignment.py:0
+msgid "Teacher load exceeds maximum allowed."
+msgstr "عبء المعلم يتجاوز الحد المسموح."
+
+#. module: edu_islamic_complex
+#. odoo-python
+#: code:addons/edu_islamic_complex/models/attendance.py:0
+msgid "Teacher must be empty for student attendance."
+msgstr "يجب ترك المعلم فارغًا لحضور الطالب."
+
+#. module: edu_islamic_complex
+#: model:ir.actions.act_window,name:edu_islamic_complex.action_edu_teachers
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__teacher_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__teacher_ids
+#: model:ir.ui.menu,name:edu_islamic_complex.menu_edu_teachers
+msgid "Teachers"
+msgstr "المعلمون"
+
+#. module: edu_islamic_complex
+#: model_terms:ir.ui.view,arch_db:edu_islamic_complex.view_hr_employee_form_edu
+msgid "Teaching"
+msgstr "التدريس"
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_assignment
+msgid "Teaching Assignment"
+msgstr "تكليف تدريس"
+
+#. module: edu_islamic_complex
+#: model:ir.model,name:edu_islamic_complex.model_edu_session
+msgid "Teaching Session"
+msgstr "جلسة تدريس"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__teaching_specialization_ids
+msgid "Teaching Specializations"
+msgstr "تخصصات التدريس"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_evaluation__period__term
+msgid "Term"
+msgstr "الفصل"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__meeting_thursday
+msgid "Thu"
+msgstr "خم"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__available_thursday
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__meeting_day__3
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_placement_wizard__meeting_day__3
+msgid "Thursday"
+msgstr "الخميس"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__total_score
+msgid "Total Score"
+msgstr "الدرجة الإجمالية"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__total_student_count
+msgid "Total Students"
+msgstr "إجمالي الطلاب"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__meeting_tuesday
+msgid "Tue"
+msgstr "ثل"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__available_tuesday
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__meeting_day__1
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_placement_wizard__meeting_day__1
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_assignment__activity_exception_decoration
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_class_group__activity_exception_decoration
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_enrollment__activity_exception_decoration
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_evaluation__activity_exception_decoration
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_guardian__activity_exception_decoration
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_session__activity_exception_decoration
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_student__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء في السجل."
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_assignment__website_message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__website_message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_enrollment__website_message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_evaluation__website_message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_guardian__website_message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_session__website_message_ids
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_student__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_assignment__website_message_ids
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_class_group__website_message_ids
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_enrollment__website_message_ids
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_evaluation__website_message_ids
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_guardian__website_message_ids
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_session__website_message_ids
+#: model:ir.model.fields,help:edu_islamic_complex.field_edu_student__website_message_ids
+msgid "Website communication history"
+msgstr "سجل مراسلات الموقع"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_edu_class_group__meeting_wednesday
+msgid "Wed"
+msgstr "أر"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields,field_description:edu_islamic_complex.field_hr_employee__available_wednesday
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_assignment__meeting_day__2
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_placement_wizard__meeting_day__2
+msgid "Wednesday"
+msgstr "الأربعاء"
+
+#. module: edu_islamic_complex
+#: model:ir.model.fields.selection,name:edu_islamic_complex.selection__edu_evaluation__period__weekly
+msgid "Weekly"
+msgstr "أسبوعي"
