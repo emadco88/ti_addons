@@ -17,8 +17,7 @@ class EduCreateInvoiceWizard(models.TransientModel):
     currency_id = fields.Many2one(
         "res.currency", default=lambda self: self.env.company.currency_id
     )
-    product_id = fields.Many2one("product.product", string="Invoice Product")
-    journal_id = fields.Many2one("account.journal", string="Journal")
+    account_id = fields.Many2one("ti_accounting_account_guide", string="Account")
 
     @api.onchange("enrollment_id")
     def _onchange_enrollment(self):
@@ -33,8 +32,7 @@ class EduCreateInvoiceWizard(models.TransientModel):
     def _apply_plan_defaults(self):
         if self.plan_id:
             self.amount = self.plan_id.amount
-            self.product_id = self.plan_id.product_id
-            self.journal_id = self.plan_id.journal_id
+            self.account_id = self.plan_id.account_id
             self.currency_id = self.plan_id.currency_id
 
     def action_create_invoice(self):
@@ -42,59 +40,45 @@ class EduCreateInvoiceWizard(models.TransientModel):
         enrollment = self.enrollment_id
         if not enrollment:
             raise UserError(_("Enrollment is required."))
-        product = self.product_id or self._get_default_product()
-        if not product:
-            raise UserError(_("Please configure an invoice product."))
+        account = self.account_id or self._get_default_account()
+        if not account:
+            raise UserError(_("Please configure a fee account."))
         partner = self._get_billing_partner(enrollment)
         if not partner:
             raise UserError(_("Please define a billing partner."))
-        journal = self.journal_id or self._get_default_journal()
-        invoice_vals = {
-            "move_type": "out_invoice",
+        amount = self.amount or enrollment.fee_plan_id.amount
+        if not amount:
+            raise UserError(_("Please set a fee amount."))
+        entry_vals = {
+            "account_id": account.id,
             "partner_id": partner.id,
-            "invoice_date": self.invoice_date,
-            "invoice_date_due": self.period_end or self.invoice_date,
-            "journal_id": journal.id if journal else False,
-            "invoice_line_ids": [
-                (
-                    0,
-                    0,
-                    {
-                        "product_id": product.id,
-                        "name": self._invoice_line_name(enrollment),
-                        "quantity": 1.0,
-                        "price_unit": self.amount or enrollment.fee_plan_id.amount,
-                    },
-                )
-            ],
+            "due_date": self.period_end or self.invoice_date,
+            "debit": amount or 0.0,
+            "credit": 0.0,
+            "explain": self._entry_explain(enrollment),
         }
-        invoice = self.env["account.move"].create(invoice_vals)
+        entry = self.env["ti_accounting_je"].create(entry_vals)
         self.env["edu_invoice.link"].create(
-            {"enrollment_id": enrollment.id, "invoice_id": invoice.id}
+            {"enrollment_id": enrollment.id, "entry_id": entry.id}
         )
         return {
             "type": "ir.actions.act_window",
-            "res_model": "account.move",
-            "res_id": invoice.id,
+            "res_model": "ti_accounting_je",
+            "res_id": entry.id,
             "view_mode": "form",
             "target": "current",
         }
 
-    def _invoice_line_name(self, enrollment):
+    def _entry_explain(self, enrollment):
         name = enrollment.level_id.name or ""
         if self.period_start and self.period_end:
             name = _("%s (%s - %s)") % (name, self.period_start, self.period_end)
         return name or _("Education Fees")
 
-    def _get_default_product(self):
+    def _get_default_account(self):
         param = self.env["ir.config_parameter"].sudo()
-        product_id = int(param.get_param("edu_islamic_complex.default_invoice_product_id", 0))
-        return self.env["product.product"].browse(product_id) if product_id else False
-
-    def _get_default_journal(self):
-        param = self.env["ir.config_parameter"].sudo()
-        journal_id = int(param.get_param("edu_islamic_complex.default_fee_journal_id", 0))
-        return self.env["account.journal"].browse(journal_id) if journal_id else False
+        account_id = int(param.get_param("edu_islamic_complex.default_fee_account_id", 0))
+        return self.env["ti_accounting_account_guide"].browse(account_id) if account_id else False
 
     def _get_billing_partner(self, enrollment):
         student = enrollment.student_id

@@ -55,11 +55,11 @@
                         <page string="Invoices">
                             <field name="invoice_link_ids">
                                 <list>
-                                    <field name="invoice_id"/>
-                                    <field name="amount_total"/>
-                                    <field name="amount_residual"/>
-                                    <field name="invoice_date_due"/>
-                                    <field name="payment_state"/>
+                                    <field name="entry_id"/>
+                                    <field name="account_id"/>
+                                    <field name="due_date"/>
+                                    <field name="debit"/>
+                                    <field name="credit"/>
                                 </list>
                             </field>
                         </page>

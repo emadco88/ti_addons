@@ -30,8 +30,7 @@
                             <field name="currency_id"/>
                         </group>
                         <group>
-                            <field name="product_id"/>
-                            <field name="journal_id"/>
+                            <field name="account_id"/>
                             <field name="active"/>
                             <field name="company_id" groups="base.group_multi_company"/>
                         </group>
@@ -47,11 +46,12 @@
         <field name="arch" type="xml">
             <list>
                 <field name="enrollment_id"/>
-                <field name="invoice_id"/>
-                <field name="amount_total"/>
-                <field name="amount_residual"/>
-                <field name="invoice_date_due"/>
-                <field name="payment_state"/>
+                <field name="entry_id"/>
+                <field name="account_id"/>
+                <field name="partner_id"/>
+                <field name="due_date"/>
+                <field name="debit"/>
+                <field name="credit"/>
                 <field name="overdue_days"/>
             </list>
         </field>
@@ -65,11 +65,12 @@
                 <sheet>
                     <group>
                         <field name="enrollment_id"/>
-                        <field name="invoice_id"/>
-                        <field name="amount_total"/>
-                        <field name="amount_residual"/>
-                        <field name="invoice_date_due"/>
-                        <field name="payment_state"/>
+                        <field name="entry_id"/>
+                        <field name="account_id"/>
+                        <field name="partner_id"/>
+                        <field name="due_date"/>
+                        <field name="debit"/>
+                        <field name="credit"/>
                         <field name="overdue_days"/>
                     </group>
                 </sheet>
@@ -83,7 +84,9 @@
         <field name="arch" type="xml">
             <search>
                 <field name="enrollment_id"/>
-                <field name="invoice_id"/>
+                <field name="entry_id"/>
+                <field name="account_id"/>
+                <field name="partner_id"/>
                 <filter string="Overdue" name="overdue" domain="[('is_overdue', '=', True)]"/>
             </search>
         </field>
@@ -96,12 +99,12 @@
     </record>
 
     <record id="action_edu_invoice_links" model="ir.actions.act_window">
-        <field name="name">Fee Invoices</field>
+        <field name="name">Fee Entries</field>
         <field name="res_model">edu_invoice.link</field>
         <field name="view_mode">list,form</field>
     </record>
 
-    <menuitem id="menu_edu_fee_invoices" name="Fee Invoices" parent="menu_edu_fees" action="action_edu_invoice_links"
+    <menuitem id="menu_edu_fee_invoices" name="Fee Entries" parent="menu_edu_fees" action="action_edu_invoice_links"
               sequence="10"/>
 
     <menuitem id="menu_edu_fees_plans" name="Fees Plans" parent="menu_edu_config" action="action_edu_fees_plans"

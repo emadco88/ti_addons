@@ -141,8 +141,8 @@ class EduStudent(models.Model):
             student.assignment_count = len(student.assignment_ids)
             student.attendance_count = len(student.attendance_ids.filtered(lambda l: l.person_type == "student"))
             student.evaluation_count = len(student.evaluation_ids)
-            invoices = student.enrollment_ids.mapped("invoice_link_ids.invoice_id")
-            student.invoice_count = len(invoices)
+            entries = student.enrollment_ids.mapped("invoice_link_ids.entry_id")
+            student.invoice_count = len(entries)
 
     def action_view_enrollments(self):
         self.ensure_one()
@@ -189,9 +189,8 @@ class EduStudent(models.Model):
 
     def action_view_invoices(self):
         self.ensure_one()
-        invoices = self.enrollment_ids.mapped("invoice_link_ids.invoice_id")
-        action = self.env.ref("account.action_move_out_invoice_type").read()[0]
-        action["domain"] = [("id", "in", invoices.ids)]
+        action = self.env.ref("edu_islamic_complex.action_edu_invoice_links").read()[0]
+        action["domain"] = [("enrollment_id", "in", self.enrollment_ids.ids)]
         return action
 
     def action_open_placement_wizard(self):

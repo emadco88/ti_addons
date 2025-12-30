@@ -6,7 +6,7 @@
     "author": "Codex CLI",
     "license": "LGPL-3",
     "application": True,
-    "depends": ["base", "hr", "mail", "account"],
+    "depends": ["base", "hr", "mail", "ti_accounting"],
     "data": [
         "security/edu_groups.xml",
         "security/ir.model.access.csv",

@@ -49,8 +49,7 @@
                         <field name="period_start"/>
                         <field name="period_end"/>
                         <field name="amount"/>
-                        <field name="product_id"/>
-                        <field name="journal_id"/>
+                        <field name="account_id"/>
                     </group>
 
                 </sheet>

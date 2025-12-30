@@ -105,8 +105,8 @@ class EduEnrollment(models.Model):
 
     def action_view_invoices(self):
         self.ensure_one()
-        action = self.env.ref("account.action_move_out_invoice_type").read()[0]
-        action["domain"] = [("id", "in", self.invoice_link_ids.mapped("invoice_id").ids)]
+        action = self.env.ref("edu_islamic_complex.action_edu_invoice_links").read()[0]
+        action["domain"] = [("enrollment_id", "=", self.id)]
         return action
 
     def action_create_invoice(self):

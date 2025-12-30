@@ -32,15 +32,9 @@ class EduSettings(models.TransientModel):
         company_dependent=True,
         default=4,
     )
-    invoice_product_id_default = fields.Many2one(
-        "product.product",
-        string="Default Invoice Product",
-        config_parameter="edu_islamic_complex.default_invoice_product_id",
-        company_dependent=True,
-    )
-    fee_journal_id_default = fields.Many2one(
-        "account.journal",
-        string="Default Fee Journal",
-        config_parameter="edu_islamic_complex.default_fee_journal_id",
+    fee_account_id_default = fields.Many2one(
+        "ti_accounting_account_guide",
+        string="Default Fee Account",
+        config_parameter="edu_islamic_complex.default_fee_account_id",
         company_dependent=True,
     )

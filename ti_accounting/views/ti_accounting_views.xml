@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_ti_accounting_account_guide_list" model="ir.ui.view">
+        <field name="name">ti_accounting_account_guide.list</field>
+        <field name="model">ti_accounting_account_guide</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_ti_accounting_account_guide_form" model="ir.ui.view">
+        <field name="name">ti_accounting_account_guide.form</field>
+        <field name="model">ti_accounting_account_guide</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_ti_accounting_account_guide" model="ir.actions.act_window">
+        <field name="name">Account Guide</field>
+        <field name="res_model">ti_accounting_account_guide</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="view_ti_accounting_je_list" model="ir.ui.view">
+        <field name="name">ti_accounting_je.list</field>
+        <field name="model">ti_accounting_je</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="due_date"/>
+                <field name="account_id"/>
+                <field name="partner_id"/>
+                <field name="debit"/>
+                <field name="credit"/>
+                <field name="explain"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_ti_accounting_je_form" model="ir.ui.view">
+        <field name="name">ti_accounting_je.form</field>
+        <field name="model">ti_accounting_je</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="account_id"/>
+                        <field name="partner_id"/>
+                        <field name="due_date"/>
+                    </group>
+                    <group>
+                        <field name="debit"/>
+                        <field name="credit"/>
+                    </group>
+                    <group>
+                        <field name="explain"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_ti_accounting_je" model="ir.actions.act_window">
+        <field name="name">Journal Entries</field>
+        <field name="res_model">ti_accounting_je</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_ti_accounting_root" name="TI Accounting" sequence="10"/>
+    <menuitem id="menu_ti_accounting_entries" name="Journal Entries" parent="menu_ti_accounting_root"
+              action="action_ti_accounting_je" sequence="10"/>
+    <menuitem id="menu_ti_accounting_accounts" name="Account Guide" parent="menu_ti_accounting_root"
+              action="action_ti_accounting_account_guide" sequence="20"/>
+</odoo>

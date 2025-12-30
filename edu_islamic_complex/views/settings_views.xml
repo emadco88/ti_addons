@@ -55,20 +55,11 @@
                         </div>
                         <div class="col-12 col-lg-6 o_setting_box">
                             <div class="o_setting_left_pane">
-                                <field name="invoice_product_id_default"/>
+                                <field name="fee_account_id_default"/>
                             </div>
                             <div class="o_setting_right_pane">
-                                <label for="invoice_product_id_default"/>
-                                <div class="text-muted">Default product for fees invoicing.</div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 o_setting_box">
-                            <div class="o_setting_left_pane">
-                                <field name="fee_journal_id_default"/>
-                            </div>
-                            <div class="o_setting_right_pane">
-                                <label for="fee_journal_id_default"/>
-                                <div class="text-muted">Default journal for fee invoices.</div>
+                                <label for="fee_account_id_default"/>
+                                <div class="text-muted">Default account for fee entries.</div>
                             </div>
                         </div>
                     </div>

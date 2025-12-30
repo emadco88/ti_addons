@@ -57,4 +57,11 @@ class EduDashboard(models.Model):
         dashboard = self.search([("company_id", "=", self.env.company.id)], limit=1)
         if not dashboard:
             dashboard = self.create({"company_id": self.env.company.id})
-        return dashboard
+        return {
+            "type": "ir.actions.act_window",
+            "name": dashboard.name,
+            "res_model": "edu_dashboard",
+            "view_mode": "form",
+            "res_id": dashboard.id,
+            "target": "current",
+        }
