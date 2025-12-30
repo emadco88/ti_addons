@@ -1,0 +1,136 @@
+<odoo>
+    <record id="view_edu_class_group_list" model="ir.ui.view">
+        <field name="name">edu_class.group.list</field>
+        <field name="model">edu_class_group</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="level_id"/>
+                <field name="capacity"/>
+                <field name="active_student_count"/>
+                <field name="time_start" widget="float_time"/>
+                <field name="time_end" widget="float_time"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_edu_class_group_kanban" model="ir.ui.view">
+        <field name="name">edu_class.group.kanban</field>
+        <field name="model">edu_class_group</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="name"/>
+                <field name="level_id"/>
+                <field name="active_student_count"/>
+                <field name="capacity"/>
+                <field name="teacher_ids"/>
+                <field name="time_start"/>
+                <field name="time_end"/>
+                <templates>
+                    <t t-name="card" class="flex-row">
+                        <div class="flex-grow-1">
+                            <div>
+                                <field name="name" class="fw-bold fs-5"/>
+                                <span class="ms-2 text-muted">
+                                    <field name="level_id"/>
+                                </span>
+                            </div>
+                            <div class="text-muted small">
+                                <span>Students: </span>
+                                <field name="active_student_count"/>
+                                <span>/</span>
+                                <field name="capacity"/>
+                            </div>
+                            <div class="text-muted small">
+                                <span>Time: </span>
+                                <field name="time_start" widget="float_time"/>
+                                <span> - </span>
+                                <field name="time_end" widget="float_time"/>
+                            </div>
+                            <div>
+                                <field name="teacher_ids" widget="many2many_tags"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_edu_class_group_form" model="ir.ui.view">
+        <field name="name">edu_class.group.form</field>
+        <field name="model">edu_class_group</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="level_id"/>
+                            <field name="capacity"/>
+                            <field name="active"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group>
+                            <field name="location"/>
+                            <field name="time_start" widget="float_time"/>
+                            <field name="time_end" widget="float_time"/>
+                        </group>
+                    </group>
+                    <group string="Meeting Days">
+                        <field name="meeting_monday"/>
+                        <field name="meeting_tuesday"/>
+                        <field name="meeting_wednesday"/>
+                        <field name="meeting_thursday"/>
+                        <field name="meeting_friday"/>
+                        <field name="meeting_saturday"/>
+                        <field name="meeting_sunday"/>
+                    </group>
+                    <notebook>
+                        <page string="Enrollments">
+                            <field name="enrollment_ids">
+                                <list>
+                                    <field name="student_id"/>
+                                    <field name="level_id"/>
+                                    <field name="status"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Assignments">
+                            <field name="assignment_ids">
+                                <list>
+                                    <field name="teacher_id"/>
+                                    <field name="status"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_edu_class_group_search" model="ir.ui.view">
+        <field name="name">edu_class.group.search</field>
+        <field name="model">edu_class_group</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="level_id"/>
+                <filter string="Active" name="active" domain="[('active', '=', True)]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_edu_class_groups" model="ir.actions.act_window">
+        <field name="name">Groups</field>
+        <field name="res_model">edu_class_group</field>
+        <field name="view_mode">kanban,list,form</field>
+    </record>
+
+    <menuitem id="menu_edu_groups" name="Groups" parent="menu_edu_root" action="action_edu_class_groups" sequence="40"/>
+</odoo>

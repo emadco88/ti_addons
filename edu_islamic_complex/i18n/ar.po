@@ -1,0 +1,127 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* edu_islamic_complex
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. module: edu_islamic_complex
+msgid "Education"
+msgstr "التعليم"
+
+#. module: edu_islamic_complex
+msgid "Students"
+msgstr "الطلاب"
+
+#. module: edu_islamic_complex
+msgid "Guardians"
+msgstr "أولياء الأمور"
+
+#. module: edu_islamic_complex
+msgid "Levels"
+msgstr "المستويات"
+
+#. module: edu_islamic_complex
+msgid "Groups"
+msgstr "المجموعات"
+
+#. module: edu_islamic_complex
+msgid "Enrollments"
+msgstr "التسجيلات"
+
+#. module: edu_islamic_complex
+msgid "Assignments"
+msgstr "التكليفات"
+
+#. module: edu_islamic_complex
+msgid "Sessions"
+msgstr "الحصص"
+
+#. module: edu_islamic_complex
+msgid "Attendance"
+msgstr "الحضور"
+
+#. module: edu_islamic_complex
+msgid "Evaluations"
+msgstr "التقييمات"
+
+#. module: edu_islamic_complex
+msgid "Fees"
+msgstr "الرسوم"
+
+#. module: edu_islamic_complex
+msgid "Fees Plans"
+msgstr "خطط الرسوم"
+
+#. module: edu_islamic_complex
+msgid "Fee Invoices"
+msgstr "فواتير الرسوم"
+
+#. module: edu_islamic_complex
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: edu_islamic_complex
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#. module: edu_islamic_complex
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. module: edu_islamic_complex
+msgid "Teachers"
+msgstr "المعلمون"
+
+#. module: edu_islamic_complex
+msgid "Placement"
+msgstr "اختبار تحديد المستوى"
+
+#. module: edu_islamic_complex
+msgid "Create Invoice"
+msgstr "إنشاء فاتورة"
+
+#. module: edu_islamic_complex
+msgid "Student"
+msgstr "طالب"
+
+#. module: edu_islamic_complex
+msgid "Guardian"
+msgstr "ولي أمر"
+
+#. module: edu_islamic_complex
+msgid "Educational Level"
+msgstr "المستوى التعليمي"
+
+#. module: edu_islamic_complex
+msgid "Class Group"
+msgstr "مجموعة دراسية"
+
+#. module: edu_islamic_complex
+msgid "Enrollment"
+msgstr "تسجيل"
+
+#. module: edu_islamic_complex
+msgid "Teaching Assignment"
+msgstr "تكليف تدريس"
+
+#. module: edu_islamic_complex
+msgid "Teaching Session"
+msgstr "حصة تعليمية"
+
+#. module: edu_islamic_complex
+msgid "Evaluation"
+msgstr "تقييم"
+
+#. module: edu_islamic_complex
+msgid "Fees Plan"
+msgstr "خطة رسوم"

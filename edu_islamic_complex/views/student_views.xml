@@ -1,0 +1,134 @@
+<odoo>
+    <record id="view_edu_student_list" model="ir.ui.view">
+        <field name="name">edu_student.list</field>
+        <field name="model">edu_student</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="student_ref"/>
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="phone"/>
+                <field name="current_level_id"/>
+                <field name="attendance_rate"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_edu_student_form" model="ir.ui.view">
+        <field name="name">edu_student.form</field>
+        <field name="model">edu_student</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_open_placement_wizard" type="object" string="Placement" class="btn-primary"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_enrollments" type="object" class="oe_stat_button" icon="fa-book">
+                            <field name="enrollment_count" widget="statinfo" string="Enrollments"/>
+                        </button>
+                        <button name="action_view_assignments" type="object" class="oe_stat_button" icon="fa-user">
+                            <field name="assignment_count" widget="statinfo" string="Assignments"/>
+                        </button>
+                        <button name="action_view_attendance" type="object" class="oe_stat_button"
+                                icon="fa-check-square">
+                            <field name="attendance_count" widget="statinfo" string="Attendance"/>
+                        </button>
+                        <button name="action_view_evaluations" type="object" class="oe_stat_button" icon="fa-bar-chart">
+                            <field name="evaluation_count" widget="statinfo" string="Evaluations"/>
+                        </button>
+                        <button name="action_view_invoices" type="object" class="oe_stat_button" icon="fa-money">
+                            <field name="invoice_count" widget="statinfo" string="Invoices"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="student_ref" readonly="1"/>
+                            <field name="gender"/>
+                            <field name="birth_date"/>
+                            <field name="national_id"/>
+                            <field name="enrollment_date"/>
+                            <field name="active"/>
+                        </group>
+                        <group>
+                            <field name="phone"/>
+                            <field name="email"/>
+                            <field name="address"/>
+                            <field name="partner_id"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Guardians">
+                            <field name="guardian_ids" context="{'default_student_ids': [id]}"/>
+                        </page>
+                        <page string="Enrollments">
+                            <field name="enrollment_ids" context="{'default_student_id': id}">
+                                <list editable="bottom">
+                                    <field name="level_id"/>
+                                    <field name="class_group_id"/>
+                                    <field name="start_date"/>
+                                    <field name="status"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Assignments">
+                            <field name="assignment_ids" context="{'default_student_id': id}">
+                                <list>
+                                    <field name="teacher_id"/>
+                                    <field name="start_date"/>
+                                    <field name="status"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Attendance">
+                            <field name="attendance_ids" domain="[('person_type', '=', 'student')]">
+                                <list>
+                                    <field name="date"/>
+                                    <field name="status"/>
+                                    <field name="session_id"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Evaluations">
+                            <field name="evaluation_ids">
+                                <list>
+                                    <field name="date"/>
+                                    <field name="teacher_id"/>
+                                    <field name="total_score"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_edu_student_search" model="ir.ui.view">
+        <field name="name">edu_student.search</field>
+        <field name="model">edu_student</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="student_ref"/>
+                <field name="gender"/>
+                <field name="current_level_id"/>
+                <filter string="Active" name="active" domain="[('active', '=', True)]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_edu_students" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="res_model">edu_student</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_edu_students" name="Students" parent="menu_edu_root" action="action_edu_students" sequence="10"/>
+
+</odoo>

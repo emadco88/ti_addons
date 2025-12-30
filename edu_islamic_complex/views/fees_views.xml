@@ -1,0 +1,111 @@
+<odoo>
+    <record id="view_edu_fees_plan_list" model="ir.ui.view">
+        <field name="name">edu_fees.plan.list</field>
+        <field name="model">edu_fees.plan</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="level_id"/>
+                <field name="billing_period"/>
+                <field name="amount"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_edu_fees_plan_form" model="ir.ui.view">
+        <field name="name">edu_fees.plan.form</field>
+        <field name="model">edu_fees.plan</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="level_id"/>
+                            <field name="billing_period"/>
+                            <field name="amount"/>
+                            <field name="currency_id"/>
+                        </group>
+                        <group>
+                            <field name="product_id"/>
+                            <field name="journal_id"/>
+                            <field name="active"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_edu_invoice_link_list" model="ir.ui.view">
+        <field name="name">edu_invoice.link.list</field>
+        <field name="model">edu_invoice.link</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="enrollment_id"/>
+                <field name="invoice_id"/>
+                <field name="amount_total"/>
+                <field name="amount_residual"/>
+                <field name="invoice_date_due"/>
+                <field name="payment_state"/>
+                <field name="overdue_days"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_edu_invoice_link_form" model="ir.ui.view">
+        <field name="name">edu_invoice.link.form</field>
+        <field name="model">edu_invoice.link</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="enrollment_id"/>
+                        <field name="invoice_id"/>
+                        <field name="amount_total"/>
+                        <field name="amount_residual"/>
+                        <field name="invoice_date_due"/>
+                        <field name="payment_state"/>
+                        <field name="overdue_days"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_edu_invoice_link_search" model="ir.ui.view">
+        <field name="name">edu_invoice.link.search</field>
+        <field name="model">edu_invoice.link</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="enrollment_id"/>
+                <field name="invoice_id"/>
+                <filter string="Overdue" name="overdue" domain="[('is_overdue', '=', True)]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_edu_fees_plans" model="ir.actions.act_window">
+        <field name="name">Fees Plans</field>
+        <field name="res_model">edu_fees.plan</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_edu_invoice_links" model="ir.actions.act_window">
+        <field name="name">Fee Invoices</field>
+        <field name="res_model">edu_invoice.link</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_edu_fee_invoices" name="Fee Invoices" parent="menu_edu_fees" action="action_edu_invoice_links"
+              sequence="20"/>
+
+
+    <menuitem id="menu_edu_fees_plans" name="Fees Plans" parent="menu_edu_fees" action="action_edu_fees_plans"
+              sequence="10"/>
+
+</odoo>

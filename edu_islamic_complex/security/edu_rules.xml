@@ -1,0 +1,147 @@
+<odoo>
+    <data>
+        <!-- Multi-company rules -->
+        <record id="rule_edu_student_company" model="ir.rule">
+            <field name="name">Student multi-company</field>
+            <field name="model_id" ref="model_edu_student" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+        <record id="rule_edu_guardian_company" model="ir.rule">
+            <field name="name">Guardian multi-company</field>
+            <field name="model_id" ref="model_edu_guardian" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+        <record id="rule_edu_level_company" model="ir.rule">
+            <field name="name">Level multi-company</field>
+            <field name="model_id" ref="model_edu_level" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+        <record id="rule_edu_group_company" model="ir.rule">
+            <field name="name">Group multi-company</field>
+            <field name="model_id" ref="model_edu_class_group" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+        <record id="rule_edu_enrollment_company" model="ir.rule">
+            <field name="name">Enrollment multi-company</field>
+            <field name="model_id" ref="model_edu_enrollment" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+        <record id="rule_edu_assignment_company" model="ir.rule">
+            <field name="name">Assignment multi-company</field>
+            <field name="model_id" ref="model_edu_assignment" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+        <record id="rule_edu_session_company" model="ir.rule">
+            <field name="name">Session multi-company</field>
+            <field name="model_id" ref="model_edu_session" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+        <record id="rule_edu_attendance_company" model="ir.rule">
+            <field name="name">Attendance multi-company</field>
+            <field name="model_id" ref="model_edu_attendance" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+        <record id="rule_edu_evaluation_company" model="ir.rule">
+            <field name="name">Evaluation multi-company</field>
+            <field name="model_id" ref="model_edu_evaluation" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+        <record id="rule_edu_fees_plan_company" model="ir.rule">
+            <field name="name">Fees plan multi-company</field>
+            <field name="model_id" ref="model_edu_fees_plan" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+        <record id="rule_edu_invoice_link_company" model="ir.rule">
+            <field name="name">Invoice link multi-company</field>
+            <field name="model_id" ref="model_edu_invoice_link" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+        <record id="rule_edu_dashboard_company" model="ir.rule">
+            <field name="name">Dashboard multi-company</field>
+            <field name="model_id" ref="model_edu_dashboard" />
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_user'))]" />
+        </record>
+
+        <!-- Teacher rules -->
+        <record id="rule_edu_student_teacher" model="ir.rule">
+            <field name="name">Teacher students</field>
+            <field name="model_id" ref="model_edu_student" />
+            <field name="domain_force">[('teacher_ids', 'in', user.employee_id.id)]</field>
+            <field name="groups" eval="[(4, ref('edu_islamic_complex.group_edu_teacher'))]" />
+        </record>
+        <record id="rule_edu_guardian_teacher" model="ir.rule">
+            <field name="name">Teacher guardians</field>
+            <field name="model_id" ref="model_edu_guardian" />
+            <field name="domain_force">[('student_ids.teacher_ids', 'in', user.employee_id.id)]</field>
+            <field name="groups" eval="[(4, ref('edu_islamic_complex.group_edu_teacher'))]" />
+        </record>
+        <record id="rule_edu_group_teacher" model="ir.rule">
+            <field name="name">Teacher groups</field>
+            <field name="model_id" ref="model_edu_class_group" />
+            <field name="domain_force">[('teacher_ids', 'in', user.employee_id.id)]</field>
+            <field name="groups" eval="[(4, ref('edu_islamic_complex.group_edu_teacher'))]" />
+        </record>
+        <record id="rule_edu_enrollment_teacher" model="ir.rule">
+            <field name="name">Teacher enrollments</field>
+            <field name="model_id" ref="model_edu_enrollment" />
+            <field name="domain_force">[('student_id.teacher_ids', 'in', user.employee_id.id)]</field>
+            <field name="groups" eval="[(4, ref('edu_islamic_complex.group_edu_teacher'))]" />
+        </record>
+        <record id="rule_edu_assignment_teacher" model="ir.rule">
+            <field name="name">Teacher assignments</field>
+            <field name="model_id" ref="model_edu_assignment" />
+            <field name="domain_force">[('teacher_id', '=', user.employee_id.id)]</field>
+            <field name="groups" eval="[(4, ref('edu_islamic_complex.group_edu_teacher'))]" />
+        </record>
+        <record id="rule_edu_session_teacher" model="ir.rule">
+            <field name="name">Teacher sessions</field>
+            <field name="model_id" ref="model_edu_session" />
+            <field name="domain_force">[('teacher_id', '=', user.employee_id.id)]</field>
+            <field name="groups" eval="[(4, ref('edu_islamic_complex.group_edu_teacher'))]" />
+        </record>
+        <record id="rule_edu_attendance_teacher" model="ir.rule">
+            <field name="name">Teacher attendance</field>
+            <field name="model_id" ref="model_edu_attendance" />
+            <field name="domain_force">[('session_id.teacher_id', '=', user.employee_id.id)]</field>
+            <field name="groups" eval="[(4, ref('edu_islamic_complex.group_edu_teacher'))]" />
+        </record>
+        <record id="rule_edu_evaluation_teacher" model="ir.rule">
+            <field name="name">Teacher evaluations</field>
+            <field name="model_id" ref="model_edu_evaluation" />
+            <field name="domain_force">[('teacher_id', '=', user.employee_id.id)]</field>
+            <field name="groups" eval="[(4, ref('edu_islamic_complex.group_edu_teacher'))]" />
+        </record>
+
+        <!-- Guardian rules -->
+        <record id="rule_edu_student_guardian" model="ir.rule">
+            <field name="name">Guardian students</field>
+            <field name="model_id" ref="model_edu_student" />
+            <field name="domain_force">[('guardian_ids.user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('edu_islamic_complex.group_edu_guardian'))]" />
+        </record>
+        <record id="rule_edu_attendance_guardian" model="ir.rule">
+            <field name="name">Guardian attendance</field>
+            <field name="model_id" ref="model_edu_attendance" />
+            <field name="domain_force">[('student_id.guardian_ids.user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('edu_islamic_complex.group_edu_guardian'))]" />
+        </record>
+        <record id="rule_edu_evaluation_guardian" model="ir.rule">
+            <field name="name">Guardian evaluations</field>
+            <field name="model_id" ref="model_edu_evaluation" />
+            <field name="domain_force">[('student_id.guardian_ids.user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('edu_islamic_complex.group_edu_guardian'))]" />
+        </record>
+    </data>
+</odoo>

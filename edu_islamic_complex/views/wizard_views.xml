@@ -1,0 +1,64 @@
+<odoo>
+    <record id="view_edu_placement_wizard_form" model="ir.ui.view">
+        <field name="name">edu_placement.wizard.form</field>
+        <field name="model">edu_placement.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Placement Wizard">
+                <sheet>
+                    <group>
+                        <field name="student_id"/>
+                        <field name="age_years" readonly="1"/>
+                        <field name="reading_level"/>
+                        <field name="memorization_juz"/>
+                        <field name="score" readonly="1"/>
+                        <field name="recommended_level_id" readonly="1"/>
+                        <field name="level_id"/>
+                        <field name="class_group_id" domain="[('level_id', '=', level_id)]"/>
+                    </group>
+                    <group string="Teacher Suggestion">
+                        <field name="suggested_teacher_ids" widget="many2many_tags" readonly="1"/>
+                        <field name="teacher_id"/>
+                        <field name="create_assignment"/>
+                    </group>
+                    <group string="Schedule" invisible="class_group_id != False">
+                        <field name="meeting_day"/>
+                        <field name="time_start" widget="float_time"/>
+                        <field name="time_end" widget="float_time"/>
+                    </group>
+
+                </sheet>
+                <footer>
+                    <button name="action_create_enrollment" type="object" string="Create Enrollment"
+                            class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_edu_create_invoice_wizard_form" model="ir.ui.view">
+        <field name="name">edu_create.invoice.wizard.form</field>
+        <field name="model">edu_create.invoice.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create Invoice">
+                <sheet>
+                    <group>
+                        <field name="enrollment_id"/>
+                        <field name="plan_id"/>
+                        <field name="invoice_date"/>
+                        <field name="period_start"/>
+                        <field name="period_end"/>
+                        <field name="amount"/>
+                        <field name="product_id"/>
+                        <field name="journal_id"/>
+                    </group>
+
+                </sheet>
+                <footer>
+                    <button name="action_create_invoice" type="object" string="Create" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

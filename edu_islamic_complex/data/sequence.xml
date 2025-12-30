@@ -1,0 +1,34 @@
+<odoo>
+    <data noupdate="1">
+        <record id="seq_edu_student" model="ir.sequence">
+            <field name="name">Student</field>
+            <field name="code">edu_student</field>
+            <field name="prefix">STU-</field>
+            <field name="padding">5</field>
+        </record>
+        <record id="seq_edu_enrollment" model="ir.sequence">
+            <field name="name">Enrollment</field>
+            <field name="code">edu_enrollment</field>
+            <field name="prefix">ENR-</field>
+            <field name="padding">5</field>
+        </record>
+        <record id="seq_edu_assignment" model="ir.sequence">
+            <field name="name">Assignment</field>
+            <field name="code">edu_assignment</field>
+            <field name="prefix">ASN-</field>
+            <field name="padding">5</field>
+        </record>
+        <record id="seq_edu_session" model="ir.sequence">
+            <field name="name">Session</field>
+            <field name="code">edu_session</field>
+            <field name="prefix">SES-</field>
+            <field name="padding">5</field>
+        </record>
+        <record id="seq_edu_evaluation" model="ir.sequence">
+            <field name="name">Evaluation</field>
+            <field name="code">edu_evaluation</field>
+            <field name="prefix">EVA-</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

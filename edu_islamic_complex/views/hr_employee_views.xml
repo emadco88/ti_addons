@@ -1,0 +1,92 @@
+<odoo>
+    <record id="view_hr_employee_form_edu" model="ir.ui.view">
+        <field name="name">hr.employee.form.edu_teacher</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook" position="inside">
+                <page string="Teaching">
+                    <group>
+                        <field name="is_teacher"/>
+                        <field name="is_teacher_effective" readonly="1"/>
+                        <field name="teaching_specialization_ids" widget="many2many_tags"/>
+                        <field name="max_load"/>
+                        <field name="current_load" readonly="1"/>
+                        <field name="availability_notes"/>
+                    </group>
+                    <group string="Available Days">
+                        <field name="available_monday"/>
+                        <field name="available_tuesday"/>
+                        <field name="available_wednesday"/>
+                        <field name="available_thursday"/>
+                        <field name="available_friday"/>
+                        <field name="available_saturday"/>
+                        <field name="available_sunday"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_edu_teacher_list" model="ir.ui.view">
+        <field name="name">edu_teacher.list</field>
+        <field name="model">hr.employee</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="job_id"/>
+                <field name="is_teacher_effective"/>
+                <field name="current_load"/>
+                <field name="max_load"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_edu_teacher_kanban" model="ir.ui.view">
+        <field name="name">edu_teacher.kanban</field>
+        <field name="model">hr.employee</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="name"/>
+                <field name="job_id"/>
+                <field name="current_load"/>
+                <field name="max_load"/>
+                <field name="teaching_specialization_ids"/>
+                <templates>
+                    <t t-name="card" class="flex-row">
+                        <div class="flex-grow-1">
+                            <div>
+                                <field name="name" class="fw-bold fs-5"/>
+                                <span class="ms-2 text-muted" invisible="not job_id">
+                                    <field name="job_id"/>
+                                </span>
+                            </div>
+                            <div class="text-muted small">
+                                <span>Load: </span>
+                                <field name="current_load"/>
+                                <span>/</span>
+                                <field name="max_load"/>
+                            </div>
+                            <div>
+                                <field name="teaching_specialization_ids" widget="many2many_tags"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="action_edu_teachers" model="ir.actions.act_window">
+        <field name="name">Teachers</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="domain">[("is_teacher_effective", "=", True)]</field>
+        <field name="context">{"search_default_is_teacher_effective": 1}</field>
+    </record>
+
+    <menuitem id="menu_edu_teachers" name="Teachers" parent="menu_edu_root" action="action_edu_teachers"
+              sequence="100"/>
+
+</odoo>

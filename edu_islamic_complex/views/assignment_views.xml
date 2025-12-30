@@ -1,0 +1,92 @@
+<odoo>
+    <record id="view_edu_assignment_list" model="ir.ui.view">
+        <field name="name">edu_assignment.list</field>
+        <field name="model">edu_assignment</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="teacher_id"/>
+                <field name="student_id"/>
+                <field name="class_group_id"/>
+                <field name="start_date"/>
+                <field name="status"/>
+                <field name="load_units"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_edu_assignment_form" model="ir.ui.view">
+        <field name="name">edu_assignment.form</field>
+        <field name="model">edu_assignment</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_generate_sessions" type="object" string="Generate Sessions"
+                            class="btn-primary"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name" readonly="1"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="teacher_id"/>
+                            <field name="student_id"/>
+                            <field name="class_group_id"/>
+                            <field name="assignment_type" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                            <field name="status"/>
+                            <field name="load_units" readonly="1"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                    <group string="Schedule" invisible="assignment_type == 'group'">
+                        <field name="meeting_day"/>
+                        <field name="time_start" widget="float_time"/>
+                        <field name="time_end" widget="float_time"/>
+                    </group>
+                    <notebook>
+                        <page string="Sessions">
+                            <field name="session_ids">
+                                <list>
+                                    <field name="date"/>
+                                    <field name="start_time" widget="float_time"/>
+                                    <field name="end_time" widget="float_time"/>
+                                    <field name="state"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_edu_assignment_search" model="ir.ui.view">
+        <field name="name">edu_assignment.search</field>
+        <field name="model">edu_assignment</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="teacher_id"/>
+                <field name="student_id"/>
+                <field name="class_group_id"/>
+                <field name="status"/>
+                <filter string="Active" name="active" domain="[('status', '=', 'active')]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_edu_assignments" model="ir.actions.act_window">
+        <field name="name">Assignments</field>
+        <field name="res_model">edu_assignment</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="menu_edu_assignments" name="Assignments" parent="menu_edu_root" action="action_edu_assignments"
+              sequence="60"/>
+
+</odoo>

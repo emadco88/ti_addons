@@ -1,0 +1,48 @@
+<odoo>
+    <data>
+        <record id="edu_level_noorania" model="edu_level">
+            <field name="name">Noorania</field>
+            <field name="sequence">10</field>
+            <field name="placement_min_score">0</field>
+            <field name="placement_max_score">30</field>
+        </record>
+        <record id="edu_level_tajweed" model="edu_level">
+            <field name="name">Tajweed</field>
+            <field name="sequence">20</field>
+            <field name="placement_min_score">31</field>
+            <field name="placement_max_score">60</field>
+        </record>
+        <record id="edu_group_noorania_a" model="edu_class_group">
+            <field name="name">Noorania A</field>
+            <field name="level_id" ref="edu_level_noorania"/>
+            <field name="capacity">20</field>
+            <field name="meeting_monday">1</field>
+            <field name="meeting_wednesday">1</field>
+            <field name="time_start">17.0</field>
+            <field name="time_end">18.0</field>
+        </record>
+        <record id="edu_fees_noorania" model="edu_fees.plan">
+            <field name="name">Noorania Monthly</field>
+            <field name="level_id" ref="edu_level_noorania"/>
+            <field name="amount">200</field>
+            <field name="billing_period">monthly</field>
+        </record>
+        <record id="edu_guardian_ali" model="edu_guardian">
+            <field name="name">Ali Hassan</field>
+            <field name="relation">father</field>
+            <field name="phone">+966500000000</field>
+        </record>
+        <record id="edu_student_ahmed" model="edu_student">
+            <field name="name">Ahmed Ali</field>
+            <field name="gender">male</field>
+            <field name="guardian_ids" eval="[(4, ref('edu_guardian_ali'))]"/>
+        </record>
+        <record id="edu_enrollment_ahmed" model="edu_enrollment">
+            <field name="student_id" ref="edu_student_ahmed"/>
+            <field name="level_id" ref="edu_level_noorania"/>
+            <field name="class_group_id" ref="edu_group_noorania_a"/>
+            <field name="status">active</field>
+            <field name="fee_plan_id" ref="edu_fees_noorania"/>
+        </record>
+    </data>
+</odoo>
