@@ -76,6 +76,6 @@
     </record>
 
     <menuitem id="menu_edu_attendance" name="Attendance" parent="menu_edu_root" action="action_edu_attendance"
-              sequence="80"/>
+              sequence="60"/>
 
 </odoo>

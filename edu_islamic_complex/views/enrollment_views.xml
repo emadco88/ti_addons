@@ -92,6 +92,6 @@
     </record>
 
     <menuitem id="menu_edu_enrollments" name="Enrollments" parent="menu_edu_root" action="action_edu_enrollments"
-              sequence="50"/>
+              sequence="30"/>
 
 </odoo>

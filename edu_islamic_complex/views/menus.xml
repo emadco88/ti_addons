@@ -1,11 +1,12 @@
 <odoo>
     <menuitem id="menu_edu_root" name="Education" sequence="10"/>
 
+    <menuitem id="menu_edu_fees" name="Fees" parent="menu_edu_root" sequence="80"/>
 
-    <menuitem id="menu_edu_fees" name="Fees" parent="menu_edu_root" sequence="110"/>
+    <menuitem id="menu_edu_reports" name="Reports" parent="menu_edu_root" sequence="100"/>
 
-    <menuitem id="menu_edu_reports" name="Reports" parent="menu_edu_root" sequence="120"/>
+    <menuitem id="menu_edu_config" name="Configuration" parent="menu_edu_root" sequence="110"/>
 
-    <menuitem id="menu_edu_settings" name="Settings" parent="menu_edu_root" action="base.res_config_setting_act_window"
-              sequence="130"/>
+    <menuitem id="menu_edu_settings" name="Settings" parent="menu_edu_config"
+              action="base.res_config_setting_act_window" sequence="40"/>
 </odoo>

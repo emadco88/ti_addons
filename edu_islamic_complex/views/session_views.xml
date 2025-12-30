@@ -90,6 +90,7 @@
         <field name="view_mode">calendar,list,form</field>
     </record>
 
-    <menuitem id="menu_edu_sessions" name="Sessions" parent="menu_edu_root" action="action_edu_sessions" sequence="70"/>
+    <menuitem id="menu_edu_sessions" name="Sessions" parent="menu_edu_root" action="action_edu_sessions"
+              sequence="50"/>
 
 </odoo>

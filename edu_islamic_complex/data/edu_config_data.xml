@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="edu_level_intro" model="edu_level">
+            <field name="name">المستوى التمهيدي</field>
+            <field name="code">L1</field>
+            <field name="sequence">10</field>
+            <field name="placement_min_score">0</field>
+            <field name="placement_max_score">25</field>
+        </record>
+        <record id="edu_level_basic" model="edu_level">
+            <field name="name">المستوى الأساسي</field>
+            <field name="code">L2</field>
+            <field name="sequence">20</field>
+            <field name="placement_min_score">26</field>
+            <field name="placement_max_score">50</field>
+        </record>
+        <record id="edu_level_intermediate" model="edu_level">
+            <field name="name">المستوى المتوسط</field>
+            <field name="code">L3</field>
+            <field name="sequence">30</field>
+            <field name="placement_min_score">51</field>
+            <field name="placement_max_score">75</field>
+        </record>
+        <record id="edu_level_advanced" model="edu_level">
+            <field name="name">المستوى المتقدم</field>
+            <field name="code">L4</field>
+            <field name="sequence">40</field>
+            <field name="placement_min_score">76</field>
+            <field name="placement_max_score">100</field>
+        </record>
+
+        <record id="edu_group_intro_a" model="edu_class_group">
+            <field name="name">حلقة التمهيدي (أ)</field>
+            <field name="level_id" ref="edu_level_intro"/>
+            <field name="capacity">20</field>
+            <field name="meeting_monday">1</field>
+            <field name="meeting_wednesday">1</field>
+            <field name="meeting_friday">1</field>
+            <field name="time_start">9.0</field>
+            <field name="time_end">10.0</field>
+            <field name="location">قاعة 1</field>
+        </record>
+        <record id="edu_group_basic_a" model="edu_class_group">
+            <field name="name">حلقة الأساسي (أ)</field>
+            <field name="level_id" ref="edu_level_basic"/>
+            <field name="capacity">22</field>
+            <field name="meeting_tuesday">1</field>
+            <field name="meeting_thursday">1</field>
+            <field name="time_start">10.0</field>
+            <field name="time_end">11.0</field>
+            <field name="location">قاعة 2</field>
+        </record>
+        <record id="edu_group_intermediate_a" model="edu_class_group">
+            <field name="name">حلقة المتوسط (أ)</field>
+            <field name="level_id" ref="edu_level_intermediate"/>
+            <field name="capacity">18</field>
+            <field name="meeting_saturday">1</field>
+            <field name="meeting_sunday">1</field>
+            <field name="time_start">9.5</field>
+            <field name="time_end">11.0</field>
+            <field name="location">قاعة 3</field>
+        </record>
+
+        <record id="edu_fees_plan_intro" model="edu_fees.plan">
+            <field name="name">خطة رسوم شهرية - التمهيدي</field>
+            <field name="level_id" ref="edu_level_intro"/>
+            <field name="amount">200.0</field>
+            <field name="billing_period">monthly</field>
+        </record>
+        <record id="edu_fees_plan_basic" model="edu_fees.plan">
+            <field name="name">خطة رسوم شهرية - الأساسي</field>
+            <field name="level_id" ref="edu_level_basic"/>
+            <field name="amount">250.0</field>
+            <field name="billing_period">monthly</field>
+        </record>
+        <record id="edu_fees_plan_intermediate" model="edu_fees.plan">
+            <field name="name">خطة رسوم شهرية - المتوسط</field>
+            <field name="level_id" ref="edu_level_intermediate"/>
+            <field name="amount">300.0</field>
+            <field name="billing_period">monthly</field>
+        </record>
+        <record id="edu_fees_plan_advanced" model="edu_fees.plan">
+            <field name="name">خطة رسوم فصلية - المتقدم</field>
+            <field name="level_id" ref="edu_level_advanced"/>
+            <field name="amount">900.0</field>
+            <field name="billing_period">one_time</field>
+        </record>
+    </data>
+</odoo>

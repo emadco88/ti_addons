@@ -87,6 +87,6 @@
     </record>
 
     <menuitem id="menu_edu_teachers" name="Teachers" parent="menu_edu_root" action="action_edu_teachers"
-              sequence="100"/>
+              sequence="90"/>
 
 </odoo>

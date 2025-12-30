@@ -65,6 +65,7 @@
         <field name="res_model">edu_level</field>
         <field name="view_mode">list,form</field>
     </record>
-    <menuitem id="menu_edu_levels" name="Levels" parent="menu_edu_root" action="action_edu_levels" sequence="30"/>
+    <menuitem id="menu_edu_levels" name="Levels" parent="menu_edu_config" action="action_edu_levels"
+              sequence="10"/>
 
 </odoo>

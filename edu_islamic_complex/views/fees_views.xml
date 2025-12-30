@@ -102,10 +102,9 @@
     </record>
 
     <menuitem id="menu_edu_fee_invoices" name="Fee Invoices" parent="menu_edu_fees" action="action_edu_invoice_links"
-              sequence="20"/>
-
-
-    <menuitem id="menu_edu_fees_plans" name="Fees Plans" parent="menu_edu_fees" action="action_edu_fees_plans"
               sequence="10"/>
+
+    <menuitem id="menu_edu_fees_plans" name="Fees Plans" parent="menu_edu_config" action="action_edu_fees_plans"
+              sequence="30"/>
 
 </odoo>

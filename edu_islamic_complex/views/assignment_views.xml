@@ -87,6 +87,6 @@
         <field name="view_mode">list,form</field>
     </record>
     <menuitem id="menu_edu_assignments" name="Assignments" parent="menu_edu_root" action="action_edu_assignments"
-              sequence="60"/>
+              sequence="40"/>
 
 </odoo>

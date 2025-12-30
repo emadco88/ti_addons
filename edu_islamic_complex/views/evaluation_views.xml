@@ -94,6 +94,6 @@
     </record>
 
     <menuitem id="menu_edu_evaluations" name="Evaluations" parent="menu_edu_root" action="action_edu_evaluations"
-              sequence="90"/>
+              sequence="70"/>
 
 </odoo>

@@ -132,5 +132,6 @@
         <field name="view_mode">kanban,list,form</field>
     </record>
 
-    <menuitem id="menu_edu_groups" name="Groups" parent="menu_edu_root" action="action_edu_class_groups" sequence="40"/>
+    <menuitem id="menu_edu_groups" name="Groups" parent="menu_edu_config" action="action_edu_class_groups"
+              sequence="20"/>
 </odoo>

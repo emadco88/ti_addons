@@ -12,6 +12,7 @@
         "security/ir.model.access.csv",
         "security/edu_rules.xml",
         "data/sequence.xml",
+        "data/edu_config_data.xml",
         "views/menus.xml",
         "views/student_views.xml",
         "views/guardian_views.xml",
